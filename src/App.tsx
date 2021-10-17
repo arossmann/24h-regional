@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import './App.css';
+import de_by_Data from "./data/de-by.json"
+
+
+console.log(de_by_Data)
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <MapContainer center={[49.32946891093882, 11.014676682576878]} zoom={13} scrollWheelZoom={true}>
+        <TileLayer
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        {de_by_Data.map(store => (          
+          <Marker key = {store.id} position={[store.gps.latitude, store.gps.longitude]}>
+            <Popup position={[store.gps.latitude, store.gps.longitude]}>
+              <div>
+                <h2>{store.name}</h2>
+                <h4>Open: {store.open}</h4>
+                <p>Products: {store.products.join(",")}</p>
+              </div>
+            </Popup>
+          </Marker>
+        ))}
+        
+      </MapContainer>
   );
 }
 

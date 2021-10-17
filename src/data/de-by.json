@@ -1,0 +1,11 @@
+[{
+    "id": 1,
+    "gps": {
+        "latitude": 49.306417727599815, 
+        "longitude": 10.995994563845215
+    },
+    "name": "Automaten vom Zwick in Rudelsdorf",
+    "products": ["Eier","Kartoffeln", "Marmelade"],
+    "open": "24h"
+}
+]
