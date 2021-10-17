@@ -1,5 +1,6 @@
 {
   "name": "24h-regional",
+  "homepage": "https://arossmann.github.io/24h-regional/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
