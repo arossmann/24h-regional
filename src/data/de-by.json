@@ -1,11 +1,344 @@
-[{
-    "id": 1,
-    "gps": {
-        "latitude": 49.306417727599815, 
-        "longitude": 10.995994563845215
+[
+    {
+        "id": 1,
+        "gps": {
+            "latitude": 49.306417727599815,
+            "longitude": 10.995994563845215
+        },
+        "name": "Automaten vom Zwick in Rudelsdorf",
+        "products": [
+            "Eier",
+            "Kartoffeln",
+            "Marmelade"
+        ],
+        "open": "24h"
     },
-    "name": "Automaten vom Zwick in Rudelsdorf",
-    "products": ["Eier","Kartoffeln", "Marmelade"],
-    "open": "24h"
-}
+    {
+        "id": 2,
+        "name": "Bauernladen Lindenhof",
+        "open": "24h",
+        "gps": {
+            "latitude": 49.43745693020039,
+            "longitude": 10.851344673236087
+        },
+        "location": {
+            "street": "Lindenhof 1",
+            "zip": "90556",
+            "city": "Cadolzburg",
+            "country": "Germany"
+        },
+        "products": [
+            "Milch",
+            "Käse",
+            "Eier",
+            "Nudeln",
+            "Kartoffeln",
+            "Getreideprodukte",
+            "Holunderprodukte"
+        ],
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html"
+    },
+    {
+        "id": 3,
+        "name": "Gasthaus zum Wiesental",
+        "gps": {
+            "latitude": 49.441821630856026,
+            "longitude": 10.857200510388799
+        },
+        "location": {
+            "street": "Seeleite 2",
+            "zip": "90556",
+            "city": "Cadolzburg",
+            "country": "Germany"
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Bratengerichte, frisch vakuumiert zum erwärmen im Wasserbad",
+            "Bratwürste aus eigener Herstellung, geräuchert oder frisch, vakuumiert",
+            "Beilagen wie Klöße, Spätzle, Kraut",
+            "Selbstgemachte Wurstspezialitäten im Glas",
+            "Kuchen im Glas u.v.m."
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Gasthaus zum Wiesental",
+        "gps": {
+            "latitude": 49.5114972913519,
+            "longitude": 10.889049213222481
+        },
+        "location": {
+            "street": "Obermichelbacher Str.",
+            "zip": "90587",
+            "city": "Veitsbronn",
+            "country": "Germany"
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Bratengerichte, frisch vakuumiert zum erwärmen im Wasserbad",
+            "Bratwürste aus eigener Herstellung, geräuchert oder frisch, vakuumiert",
+            "Beilagen wie Klöße, Spätzle, Kraut",
+            "Selbstgemachte Wurstspezialitäten im Glas",
+            "Kuchen im Glas u.v.m."
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Federleins Farm GbR",
+        "gps": {
+            "latitude": 49.46287650129613,
+            "longitude": 10.877106642663412
+        },
+        "location": {
+            "street": "Dorfstraße 13",
+            "zip": "90556",
+            "city": "Cadolzburg",
+            "country": "Germany"
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Eier",
+            "Rohmilch",
+            "Kartoffeln",
+            "Käse und vieles mehr"
+        ],
+        "url": "https://www.federleinsfarm.de/"
+    },
+    {
+        "id": 6,
+        "name": "Federleins Farm GbR",
+        "gps": {
+            "latitude": 49.46393640194575,
+            "longitude": 10.860798813370263
+        },
+        "location": {
+            "street": "Nürnberger Str. 41",
+            "zip": "90556",
+            "city": "Cadolzburg",
+            "country": "Germany"
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Eier",
+            "Rohmilch",
+            "Kartoffeln",
+            "Käse und vieles mehr"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Federleins Farm GbR",
+        "gps": {
+            "latitude": 49.52898986217832,
+            "longitude": 10.862299284888145
+        },
+        "location": {
+            "street": "Hauptstraße 1A",
+            "zip": "90587",
+            "city": "Tuchenbach",
+            "country": "Germany"
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Eier",
+            "Rohmilch",
+            "Kartoffeln",
+            "Käse und vieles mehr"
+        ],
+        "url": "https://www.federleinsfarm.de/"
+    },
+    {
+        "id": 8,
+        "name": "Federleins Farm GbR",
+        "gps": {
+            "latitude": 49.442000931402404,
+            "longitude": 10.954294998380437
+        },
+        "location": {
+            "street": "Hauptstraße 14",
+            "zip": "90513",
+            "city": "Zirndorf",
+            "country": "Germany"
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Eier",
+            "Rohmilch",
+            "Kartoffeln",
+            "Käse und vieles mehr"
+        ],
+        "url": "https://www.federleinsfarm.de/"
+    },
+    {
+        "id": 9,
+        "name": "Federleins Farm GbR",
+        "gps": {
+            "latitude": 49.48056116019996,
+            "longitude": 10.956522227007529
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Eier",
+            "Rohmilch",
+            "Kartoffeln",
+            "Käse und vieles mehr"
+        ],
+        "url": "https://www.federleinsfarm.de/"
+    },
+    {
+        "id": 10,
+        "name": "Hornig GbR",
+        "gps": {
+            "latitude": 49.44008648554797, 
+            "longitude": 10.875766538864738
+        },
+        "location": {
+            "street": "Soldnerstraße 47",
+            "zip": "90766",
+            "city": "Fürth",
+            "country": "Germany"
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Eier aus Freilandhaltung", "Kartoffeln", "Nüsse", "Mohn", "Gewürze", "Fruchtsecco"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Stäudtner's Selbstbedienungshütte",
+        "gps": {
+            "latitude": 49.393252996233606, 
+            "longitude": 10.823404371389339
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "verschiedene Wurstwaren", "Grillfleisch und geräuchertes aus eigener Produktion", "Eier", "Kartoffeln", "Marmelade", "Honig", "Äpfel", "Kuchen im Glas u.a."
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Kuhle Milch & Fröhliche Hühner",
+        "gps": {
+            "latitude": 49.42523842714071, 
+            "longitude": 10.94902094197841
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Milch", "Eier"
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Das Milchhaus",
+        "gps": {
+            "latitude": 49.48227943640226, 
+            "longitude": 10.894194821709085
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Milch", "Molkereiprodukte", "Eier", "Wurstwaren", "geräuchertes Fischfilet", "Kartoffeln", "Saisonwaren wie Spargel & Erdbeeren "
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Siegried Amm",
+        "gps": {
+            "latitude": 49.48960967706957, 
+            "longitude": 10.879121380642992
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Eier"
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Rosa Kuh",
+        "gps": {
+            "latitude":49.52725964659982,  
+            "longitude": 10.921123426064343
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Milch", "Fleisch-und Wurstwaren", "Molkereiprodukte", "Eier"
+        ],
+        "url": "https://rosakuh.com/"
+    },
+    {
+        "id": 16,
+        "name": "Familie Müdsam",
+        "gps": {
+            "latitude": 49.51003626603868, 
+            "longitude": 10.892781864645329
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Milch", "Käse", "Eier"
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Berngrubers Hofladen mit Milchautomat",
+        "gps": {
+            "latitude": 49.48866949638551, 
+            "longitude": 10.92247330887752
+        },
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Kartoffeln", "Spargel", "Eier", "Holunderspezialitäten"
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Stadelner Milchhäusla",
+        "gps": {
+            "latitude": 49.51051795189506, 
+            "longitude": 10.976090816259886
+        },
+        "location": {
+            "street": "Stadelner Hauptstraße 67",
+            "zip": "90765",
+            "city": "Fürth",
+            "country": "Germany"
+        },        
+        "open": "24h",
+        "source": "https://www.landkreis-fuerth.de/zuhause-im-landkreis/gutes/frische-regionale-produkte-aus-automaten.html",
+        "products": [
+            "Milch", "Wurst", "Käse", "Eier", "Marmeladen", "Honig", "Nudeln"
+        ],
+        "url": ""
+    },
+    {
+        "id": 19,
+        "name": "Kartoffeln Lindenbachstrasse",
+        "gps": {
+            "latitude": 49.34106115982179, 
+            "longitude": 11.042998025131261
+        },
+        "location": {
+            "street": "Lindenbachstraße 122",
+            "zip": "91126",
+            "city": "Schwabach",
+            "country": "Germany"
+        },    
+        "open": "24h",
+        "products": [
+            "Kartoffeln"
+        ]
+    }
 ]
