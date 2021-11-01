@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { styled, alpha } from '@mui/material/styles';
-import { AppBar, Box, Toolbar, Typography, InputBase, Button } from '@mui/material';
+import { AppBar, Box, Toolbar, Typography, InputBase} from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
-
+import AddStoreModel from './AddStoreModal';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -51,7 +51,7 @@ export default function SearchAppBar() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <Toolbar>
                     <Typography
                         variant="h6"
@@ -61,8 +61,7 @@ export default function SearchAppBar() {
                     >
                         24h Regional - Finde einen 24h-Hofladenautomaten in deiner Nähe
                     </Typography>
-                    <Button color="inherit" href="/">Karte</Button>
-                    <Button color="inherit" href="/add">Neuer Automat</Button>
+                    <AddStoreModel />
                     <Search>
                         <SearchIconWrapper>
                             <SearchIcon />

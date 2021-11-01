@@ -1,25 +1,45 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import Home from './components/Home';
-import AddStore from './components/AddStore'
+import CustomMap from './components/CustomMap';
+import Header from './components/Header'
+import {Box} from '@mui/material/';
 
 function App() {
   return (
-    <div id="main">
-      <div>
-        <NavBar />
-      </div>
-      <BrowserRouter>
-        <Switch>
-          <Route path="/" component={Home} exact>
-          </Route>
-          <Route path="/add" component={AddStore}>
-          </Route>
-        </Switch>
-      </BrowserRouter>
-      </div>
+    <Box
+      sx={{
+        width: '100%',
+        height: '140px',
+        color: '#fff',
+        '& > .MuiBox-root > .MuiBox-root': {
+          p: 1,
+          borderRadius: 1,
+        },
+      }}
+    >
+      <Box
+        sx={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(4, 1fr)',
+          gap: 1,
+          gridTemplateRows: 'auto',
+          gridTemplateAreas: `"header header header header"
+        "main main . sidebar"
+        "footer footer footer footer"`,
+        }}
+      >
+        <Box sx={{ gridArea: 'header', bgcolor: 'primary.main' }}>
+          <Header />
+          <NavBar />
+        </Box>
+        <Box sx={{ gridArea: 'main', bgcolor: 'secondary.main' }}>
+          <CustomMap />
+        </Box>
+        <Box sx={{ gridArea: 'sidebar', bgcolor: 'info.main' }}>Sidebar</Box>
+        <Box sx={{ gridArea: 'footer', bgcolor: 'warning.main' }}>Footer</Box>
+      </Box>
+    </Box>
   );
 }
 
