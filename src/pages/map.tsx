@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import './../App.css';
+import './../App.scss';
 import de_by_Data from "../data/de-by.json"
 
 const Map = () => {
