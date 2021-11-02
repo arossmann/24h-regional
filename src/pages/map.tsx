@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup, ZoomControl } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import './../App.css';
 import de_by_Data from "../data/de-by.json"
 
@@ -19,7 +19,6 @@ const Map = () => {
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <ZoomControl position="bottomright" />
         {de_by_Data.map(store => (          
           <Marker key = {store.id} position={[store.gps.latitude, store.gps.longitude]}>
             <Popup position={[store.gps.latitude, store.gps.longitude]}>
