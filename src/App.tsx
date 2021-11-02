@@ -1,45 +1,23 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/NavBar';
-import CustomMap from './components/CustomMap';
-import Header from './components/Header'
-import {Box} from '@mui/material/';
+import Home from './pages';
+import About from './pages/about';
+import Map from './pages/map';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Box
-      sx={{
-        width: '100%',
-        height: '140px',
-        color: '#fff',
-        '& > .MuiBox-root > .MuiBox-root': {
-          p: 1,
-          borderRadius: 1,
-        },
-      }}
-    >
-      <Box
-        sx={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: 1,
-          gridTemplateRows: 'auto',
-          gridTemplateAreas: `"header header header header"
-        "main main . sidebar"
-        "footer footer footer footer"`,
-        }}
-      >
-        <Box sx={{ gridArea: 'header', bgcolor: 'primary.main' }}>
-          <Header />
-          <NavBar />
-        </Box>
-        <Box sx={{ gridArea: 'main', bgcolor: 'secondary.main' }}>
-          <CustomMap />
-        </Box>
-        <Box sx={{ gridArea: 'sidebar', bgcolor: 'info.main' }}>Sidebar</Box>
-        <Box sx={{ gridArea: 'footer', bgcolor: 'warning.main' }}>Footer</Box>
-      </Box>
-    </Box>
+    <Router>
+      <Header />
+      <Navbar />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/map' component={Map} />
+      </Switch>
+    </Router>
   );
 }
 
