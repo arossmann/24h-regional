@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+
+  24h-regional:
+    container_name: 24h-regional
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '1337:80'
