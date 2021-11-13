@@ -17,7 +17,7 @@ rmi: ## remove the image
 rebuild: rmi build ## rebuild it
 
 run: ## run the image
-	docker run -d $(DOCKER_IMAGE_NAME):latest -p 3001:3000
+	docker run -d -p 8080:80 $(DOCKER_IMAGE_NAME):latest
 
 help: ## This help dialog
 	@IFS=$$'\n' ; \

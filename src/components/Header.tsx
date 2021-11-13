@@ -1,11 +1,11 @@
 import React from 'react';
-
+import logo from '../img/logo.png';
 const Header = () => {
 return (
     <header className="header">
         <div className="container">
-            <h1 className="site-title">24h Regional</h1>
-            <span className="site-tagline">Finde einen 24h-Hofladenautomaten in deiner Nähe</span>
+        <img src={logo} alt="logo" className="logoImg" />
+            <h1 className="site-title">Finde einen 24h-Hofladenautomaten in deiner Nähe</h1>
         </div>
     </header>
     );
