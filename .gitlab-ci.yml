@@ -53,7 +53,7 @@ docker-gcp:
     - docker push "${GCP_REGISTRY_IMAGE}:${CI_COMMIT_SHA}"
     - docker push "${GCP_REGISTRY_IMAGE}:latest"
   only:
-    - master
+    - main
 
 cloud-run:
   stage: deploy
@@ -72,4 +72,4 @@ cloud-run:
         --set-env-vars=CONTENT_URI=$CONTENT_URI
         --allow-unauthenticated
   only:
-    - master
+    - main
