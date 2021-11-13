@@ -20,7 +20,7 @@ on:
 name: Build and Deploy to Cloud Run
 env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
-  SERVICE: 24h-Regional
+  SERVICE: regional-24h
   REGION: europe-north1
 
 jobs:
