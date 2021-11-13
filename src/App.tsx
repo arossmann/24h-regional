@@ -1,25 +1,27 @@
 import React from 'react';
-import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import Home from './components/Home';
-import AddStore from './components/AddStore'
+import './App.scss';
+import Home from './pages';
+import About from './pages/about';
+import Map from './pages/map';
+import Imprint from './pages/imprint';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div id="main">
-      <div>
-        <NavBar />
-      </div>
-      <BrowserRouter>
-        <Switch>
-          <Route path="/" component={Home} exact>
-          </Route>
-          <Route path="/add" component={AddStore}>
-          </Route>
-        </Switch>
-      </BrowserRouter>
-      </div>
+    <Router basename={`/${process.env.PUBLIC_URL}`}>
+      <Header />
+      <Navbar />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/map' component={Map} />
+        <Route path='/imprint' component={Imprint} />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 
