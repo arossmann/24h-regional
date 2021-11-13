@@ -13,7 +13,7 @@ const Home = () => {
     >
      <div className="container">
       <div className="row">
-        <div className="twelve columns"><h1>Willkommen auf 24h Regional - Finde einen 24h-Hofladenautomaten in deiner N&auml;he</h1></div>
+        <div className="twelve columns"><h1>Willkommen auf 24h Regional</h1></div>
       </div>
       <div className="row">
         <div className="twelve columns">

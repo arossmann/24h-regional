@@ -1,6 +1,5 @@
 {
   "name": "24h-regional",
-  "homepage": "https://arossmann.github.io/24h-regional/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,11 +29,15 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+		"test": "echo \"No tests specified\" && exit 0",
+		"lint": "eslint src/* --fix",
+		"start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+		"docker:build": "docker build -t $npm_package_name:latest .",
+		"docker:run": "docker run --name $npm_package_name -d -p 8080:80 $npm_package_name:latest",
+		"docker": "npm run build && npm run docker:build && npm run docker:run",
+		"docker:destroy": "docker stop $npm_package_name && docker rm $npm_package_name && docker rmi $npm_package_name"
+	},
   "eslintConfig": {
     "extends": [
       "react-app",
