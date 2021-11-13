@@ -27,26 +27,12 @@ npm-build:
     paths:
     - public/*
 
-docker-gitlab:
-  stage: package
-  services:
-    - docker:dind
-  before_script:
-    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN ${CI_REGISTRY}
-  script:
-    - docker build -t "${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHA}" .
-    - docker tag "${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHA}" "${CI_REGISTRY_IMAGE}:latest"
-    - docker push "${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHA}"
-    - docker push "${CI_REGISTRY_IMAGE}:latest"
-  only:
-    - master
-
 docker-gcp:
   stage: package
   services:
     - docker:dind
   before_script:
-    - echo $GCP_SERVICE_KEY | docker login -u _json_key --password-stdin https://gcr.io
+    - echo $GCP_SA_KEY | docker login -u _json_key --password-stdin https://gcr.io
   script:
     - docker build -t "${GCP_REGISTRY_IMAGE}:${CI_COMMIT_SHA}" .
     - docker tag "${GCP_REGISTRY_IMAGE}:${CI_COMMIT_SHA}" "${GCP_REGISTRY_IMAGE}:latest"
@@ -59,7 +45,7 @@ cloud-run:
   stage: deploy
   image: google/cloud-sdk:latest
   before_script:
-    - echo $GCP_SERVICE_KEY > gcloud-service-key.json && gcloud auth activate-service-account --key-file gcloud-service-key.json
+    - echo $GCP_SA_KEY > gcloud-service-key.json && gcloud auth activate-service-account --key-file gcloud-service-key.json
     - gcloud config set project $GCP_PROJECT_ID
   script:
     - >
