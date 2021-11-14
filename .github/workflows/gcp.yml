@@ -51,4 +51,5 @@ jobs:
           --image gcr.io/${{ env.PROJECT_ID }}/${{ env.SERVICE }}:${{  github.sha }} \
           --platform "managed" \
           --project ${{ env.PROJECT_ID }} \
+          --allow-unauthenticated \
           --quiet 
