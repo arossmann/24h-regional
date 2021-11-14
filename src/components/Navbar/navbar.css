@@ -81,6 +81,7 @@
     .menu-icon {
       width: 45px;
       height: 45px;
+      color: #2E3440;
     }
     .option {
       display: flex;
