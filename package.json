@@ -17,6 +17,7 @@
     "leaflet": "^1.7.1",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-leaflet": "^3.2.2",
@@ -29,15 +30,15 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-		"test": "echo \"No tests specified\" && exit 0",
-		"lint": "eslint src/* --fix",
-		"start": "react-scripts start",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "eslint src/* --fix",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-		"docker:build": "docker build -t $npm_package_name:latest .",
-		"docker:run": "docker run --name $npm_package_name -d -p 8080:80 $npm_package_name:latest",
-		"docker": "npm run build && npm run docker:build && npm run docker:run",
-		"docker:destroy": "docker stop $npm_package_name && docker rm $npm_package_name && docker rmi $npm_package_name"
-	},
+    "docker:build": "docker build -t $npm_package_name:latest .",
+    "docker:run": "docker run --name $npm_package_name -d -p 8080:80 $npm_package_name:latest",
+    "docker": "npm run build && npm run docker:build && npm run docker:run",
+    "docker:destroy": "docker stop $npm_package_name && docker rm $npm_package_name && docker rmi $npm_package_name"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

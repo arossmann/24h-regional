@@ -269,3 +269,27 @@ header h1.site-title{
   color: #1E3B64;
   font-size:xx-large;
 }
+
+nav.navbar{
+  background-color: #42AA8B;
+height: 50px;
+display: flex;
+justify-content: space-between;
+padding: 0.2rem calc((100vw - 1000px) / 2);
+}
+
+/*
+.Navbar a.navlink{
+  color:#2E3440;
+  color: #2E3440;
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 0 1rem;
+height: 100%;
+cursor: pointer;
+&.active {
+	color: #000000;
+}
+}
+*/
