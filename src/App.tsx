@@ -4,17 +4,17 @@ import Home from './pages';
 import About from './pages/about';
 import Map from './pages/map';
 import Imprint from './pages/imprint';
-import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   return (
     <Router basename={`/${process.env.PUBLIC_URL}`}>
       <Header />
-      <Navigation />
-      
+      {/*<Navigation />*/}
+      <Navbar />
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/about' component={About} />
