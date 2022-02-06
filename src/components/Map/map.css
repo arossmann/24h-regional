@@ -1,0 +1,25 @@
+h2.store_name{ 
+    font-size: 2em;
+}
+
+div#id{
+    width: 95%;
+}
+.regionalmap .leaflet-popup-content-wrapper {
+    background:#2c3e50;
+    color:#fff;
+    font-size:16px;
+    line-height:24px;
+    }
+  .regionalmap .leaflet-popup-content-wrapper a {
+    color:rgba(255,255,255,0.5);
+    }
+  .regionalmap .leaflet-popup-tip-container {
+    width:30px;
+    height:15px;
+    }
+  .regionalmap .leaflet-popup-tip {
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-top:15px solid #2c3e50;
+    }
