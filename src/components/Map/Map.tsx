@@ -32,6 +32,7 @@ const Map = () => {
         {isError ? (
 						<p>
 							Oop!!! Error getting stores
+              {console.log(Error)}
 						</p>
 					) : (
 						//Modify this section 
