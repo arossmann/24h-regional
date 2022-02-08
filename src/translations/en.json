@@ -1,0 +1,26 @@
+{
+    "header": {
+      "welcome": "Welcome to 24h Regional",
+      "about": "Why this page?",
+      "imprint": "Imprint"
+    },
+    "head": {
+        "header": "Find a 24h farm vending machine near you"
+    },
+    "menu": {
+        "start": "Start",
+        "about": "About",
+        "map": "Map",
+        "imprint": "Imprint"
+    },
+    "about": {
+        "main_text":"One Sunday I was about to start preparing lunch when I realized that I had already prepared the potatoes the day before. So I needed new ones, ideally from a local farmer. Since there are many farm shops and vending machines, I wanted to get potatoes there. Unfortunately, I couldn't find a website where I could search for it and find a map of matching machines near me. After I remembered a vending machine that I once drove past and did a bit of searching, the idea for this page came up afterwards."
+    },
+    "imprint": {
+        "contact": "Contact",
+        "disclaimer": {
+            "disclaimer": "Disclaimer",
+            "text": "Despite careful content control, I assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content."
+        }
+    }
+  }

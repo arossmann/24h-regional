@@ -1,7 +1,10 @@
 import React from 'react';
 import vegetables from '../img/sharon-pittaway-KUZnfk-2DSQ-unsplash.jpg';
+import './../i18n';
+import {useTranslation} from "react-i18next";
 
 const Home = () => {
+  const {t} = useTranslation()
   return (
     <div
       style={{
@@ -13,7 +16,7 @@ const Home = () => {
     >
      <div className="container">
       <div className="row">
-        <div className="twelve columns"><h1>Willkommen auf 24h Regional</h1></div>
+        <div className="twelve columns"><h1>{t('header:welcome')}</h1></div>
       </div>
       <div className="row">
         <div className="twelve columns">
