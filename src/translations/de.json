@@ -1,0 +1,26 @@
+{
+    "header": {
+        "welcome": "Willkommen auf 24h Regional",
+        "about": "Warum diese Seite?",
+        "imprint": "Impressum"
+      },
+    "head": {
+        "header": "Finde einen 24h-Hofladenautomaten in deiner Nähe"
+    },
+    "menu": {
+        "start": "Startseite",
+        "about": "Über",
+        "map": "Karte",
+        "imprint": "Impressum"
+    },
+    "about": {
+        "main_text": "Eines Sonntags wollte ich gerade die Vorbereitung f&uuml;r das Mittagessen beginnen, da fiel mir auf, dass ich die Kartoffeln schon am Vortag verarbeitet hatte. Also brauchte ich Neue, idealerweise von einem lokalen Bauern. Da es ja viele Hofl&auml;den und -automaten gibt, wollte ich Kartoffeln dort holen. Doch leider konnte ich keine Webseite finden, auf der ich danach suchen und auf einer Karte passende Automaten in meiner N&auml;he finden konnte. Nachdem ich dann nach etwas Erinnerung an einen Automaten, an dem ich einmal vorbeigefahren bin und etwas Suche doch g&uuml;ndig geworden bin, ist im Nachgang die Idee dieser Seite entstanden."
+    },
+    "imprint": {
+        "contact": "Kontakt",
+        "disclaimer": {
+            "disclaimer": "Haftungshinweis",
+            "text": "Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links.Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+        }
+    }
+  }
