@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+
 import Home from './pages';
 import About from './pages/about';
 import Map from './components/Map/Map';
@@ -8,6 +9,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar'
+
+
 
 function App() {
   return (
