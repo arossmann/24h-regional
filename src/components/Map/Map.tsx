@@ -14,6 +14,7 @@ const Map = () => {
     Store.getStores()
 			.then((data) => {
 				setStores(data);
+        console.log(data.length)
 			})
 			.catch((err) => {
         console.log(err);
