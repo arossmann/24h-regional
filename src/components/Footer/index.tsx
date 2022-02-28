@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container">
-            <NavLink to='/imprint' activeClassName="selectedLink">{t('menu:imprint')}</NavLink>
+            <NavLink to='/imprint'>{t('menu:imprint')}</NavLink>
             </div>
         </footer>
         );
