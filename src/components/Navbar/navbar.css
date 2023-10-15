@@ -36,6 +36,9 @@
     font-style: normal;  
     letter-spacing: 0;
   }
+  ul.nav-options li.option a.active{
+    font-weight: bold;
+  }
   ul.nav-options li.option a:hover{
     font-weight: normal;
     text-decoration: underline;

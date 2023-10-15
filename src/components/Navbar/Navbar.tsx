@@ -5,6 +5,7 @@ import {availableLanguages} from "./../../i18n";
 import { ReactComponent as CloseMenu } from "../../assets/x.svg";
 import { ReactComponent as MenuIcon } from "../../assets/menu.svg";
 import "./navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const {t, i18n} = useTranslation()
@@ -16,13 +17,34 @@ const Navbar = () => {
       <div className="logo-nav">
         <ul className={click ? "nav-options active" : "nav-options"}>
           <li className="option" onClick={closeMobileMenu}>
-            <a href="/">{t('menu:start')}</a>
+          <NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            {t('menu:start')}
+          </NavLink>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <a href="/about">{t('menu:about')}</a>
+          <NavLink
+            to="/about"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            {t('menu:about')}
+          </NavLink>
           </li>
           <li className="option" onClick={closeMobileMenu}>
-            <a href="/map">{t('menu:map')}</a>
+            <NavLink
+            to="/map"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "active" : ""
+            }
+          >
+            {t('menu:map')}
+          </NavLink>
           </li>
         </ul>
       </div>
